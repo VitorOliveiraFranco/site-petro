@@ -3,6 +3,7 @@ const icone_bacia_do_panara = document.querySelector('#icone-bacia-do-parana');
 const bacia_do_panara = document.querySelector('#bacia-do-parana');
 const infoBacias = document.querySelector('#info-bacias');
 const detalhesBacias = document.querySelector('.detalhesBacias');
+const infoBaciasH6 = document.querySelector('#info-bacias-h6')
 let contador_icone_do_parana = true;
 
 btnBacia.addEventListener('click', () => {
@@ -80,5 +81,39 @@ icone_bacia_do_panara.addEventListener('click', () => {
     infoBlocos.style.display = 'none';
     infoCampos.style.display = 'none';
 });
+
+
+infoBaciasH6.addEventListener('mouseover', () => {
+
+    bacia_do_panara.style.display = 'block';
+});
+
+
+infoBaciasH6.addEventListener('mouseout', () => {
+
+if(contador_icone_do_parana){
+
+    bacia_do_panara.style.display = 'none';
+}
+});
+
+
+infoBaciasH6.addEventListener('click', () => {
+    
+    contador_icone_do_parana = false;
+    icone_bacia_do_panara.style.display = 'none';
+    abreInfo();
+
+    poco.style.display = 'none';
+    blocos.style.display = 'none';
+    campos.style.display = 'none';
+    infoPocos.style.display = 'none';
+    infoBacias.style.display =  'none';
+    detalhesBacias.style.display = 'block';
+    infoPocosH6.style.display = 'none';
+    infoBlocos.style.display = 'none';
+    infoCampos.style.display = 'none';
+});
+
 
 

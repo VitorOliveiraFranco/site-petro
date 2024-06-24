@@ -298,7 +298,7 @@ input:checked+.slider:before {
 .titulo {
     border-top: 7px solid var(--amarelo);
 }
-.item a:hover {
+.grid a:hover {
     border-color: var(--amarelo);
 
 }

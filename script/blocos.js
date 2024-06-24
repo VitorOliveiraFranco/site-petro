@@ -2,7 +2,7 @@ const btnBlocos = document.querySelector('#btn-blocos');
 const blocos = document.querySelector('#blocos');
 const infoBlocos = document.querySelector('#info-blocos');
 const detalhesBlocos = document.querySelector('.detalhesBlocos')
-const infoBlocosH6 = document.querySelector('info-blocos-h6')
+const infoBlocosH6 = document.querySelector('#info-blocos-h6')
 
 btnBlocos.addEventListener('click', () => {
 
@@ -49,6 +49,19 @@ btnBlocos.addEventListener('click', () => {
 });
 
 blocos.addEventListener('click', () => {
+
+    poco.style.display = 'none';
+    campos.style.display = 'none';
+    icone_bacia_do_panara.style.display = 'none';
+    infoPocos.style.display = 'none';
+    infoBlocos.style.display = 'none';
+    detalhesBlocos.style.display = 'block';
+    infoPocosH6.style.display = 'none';
+    infoCampos.style.display = 'none';
+    infoBacias.style.display =  'none';
+})
+
+infoBlocosH6.addEventListener('click', () => {
 
     poco.style.display = 'none';
     campos.style.display = 'none';

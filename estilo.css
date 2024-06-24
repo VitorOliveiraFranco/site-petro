@@ -184,11 +184,10 @@ a {
   border-bottom: 3px solid transparent;
 }
 
-.item a:hover{
+.grid a:hover{
 
-transform: scaleX(1);
+  transform: scaleX(1);
   transform-origin: left;
-
 }
 
 

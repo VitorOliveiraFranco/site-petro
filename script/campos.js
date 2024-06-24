@@ -3,6 +3,7 @@ const btnCampos = document.querySelector('#btn-campos');
 const iconeCampos = document.querySelector('#icone-campos');
 const infoCampos = document.querySelector('#info-campos');
 const detalhesCampos = document.querySelector('.detalhesCampos');
+const infoCamposH6 = document.querySelector('#info-campos-h6')
 let contadorIconeCampos = true;
 
 
@@ -56,6 +57,24 @@ btnCampos.addEventListener('click', () => {
 })
 
 iconeCampos.addEventListener('click', () => {
+    
+    zoom.setAttribute('class', 'zoom-es');
+    iconeCampos.style.display = 'none';
+    campos.style.display = 'block';
+
+    poco.style.display = 'none';
+    blocos.style.display = 'none';
+    icone_bacia_do_panara.style.display = 'none';
+    infoPocos.style.display = 'none';
+    infoCampos.style.display = 'none';
+    detalhesCampos.style.display = 'block';
+    infoPocosH6.style.display = 'none';
+    infoBlocos.style.display = 'none';
+    infoBacias.style.display =  'none';
+})
+
+
+infoCamposH6.addEventListener('click', () => {
     
     zoom.setAttribute('class', 'zoom-es');
     iconeCampos.style.display = 'none';
